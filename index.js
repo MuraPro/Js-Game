@@ -94,7 +94,6 @@ function renderBox() {
   let gameSize = $game.getBoundingClientRect();
   let maxTop = gameSize.height - boxSize;
   let maxLeft = gameSize.width - boxSize;
-  // [1,2,3] -> length == 3
   let randomColorIndex = getRandom(0, colors.length);
 
   box.style.height = box.style.width = boxSize + "px";

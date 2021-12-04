@@ -26,6 +26,10 @@ body {
   border-radius: 10px;
 }
 
+.rools {
+  font-size: 20px;
+  color: DarkCyan;
+}
 .app__header {
   padding: 20px;
   text-align: center;
@@ -55,7 +59,7 @@ body {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 3px;
-  color: #acacac;
+  color: DarkCyan;
   font-family: GothamPro, sans-serif;
   font-size: 0.8rem;
   font-weight: normal;
