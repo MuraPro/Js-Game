@@ -39,7 +39,7 @@ function startGame() {
   setGameTime();
   $gameTime.setAttribute("disabled", "true");
   isGameStarted = true;
-  $game.style.backgroundColor = "#fff";
+  $game.style.backgroundColor = "Moccasin";
   hide($start);
 
   let interval = setInterval(function () {
@@ -81,6 +81,7 @@ function handleBoxClick(event) {
   if (!isGameStarted) {
     return;
   }
+
   if (event.target.dataset.box) {
     score++;
     renderBox();
@@ -96,6 +97,8 @@ function renderBox() {
   let maxLeft = gameSize.width - boxSize;
   let randomColorIndex = getRandom(0, colors.length);
 
+  box.style.background = 'url("img/smile.jpg") center';
+  box.style.backgroundSize = "cover";
   box.style.height = box.style.width = boxSize + "px";
   box.style.position = "absolute";
   box.style.backgroundColor = colors[randomColorIndex];
