@@ -97,7 +97,7 @@ function renderBox() {
   let maxLeft = gameSize.width - boxSize;
   let randomColorIndex = getRandom(0, colors.length);
 
-  box.style.background = 'url("img/smile.jpg") center';
+//   box.style.background = 'url("img/smile.jpg") center';
   box.style.backgroundSize = "cover";
   box.style.height = box.style.width = boxSize + "px";
   box.style.position = "absolute";
